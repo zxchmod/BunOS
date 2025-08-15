@@ -27,7 +27,7 @@ bunOS is intended as a learning and demonstration project for compact device OS 
 ```
 
 ## OS Structure
-
+```
 bunOS/
 ├── boot/                  # Microloader and boot-related files
 │   ├── bootloader.asm
@@ -45,3 +45,4 @@ bunOS/
 ├── Makefile               # Build instructions
 ├── README.md
 └── .gitignore
+```
