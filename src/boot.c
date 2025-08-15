@@ -1,0 +1,1 @@
+void _start(){ extern void kernel_main(); kernel_main(); }

@@ -1,0 +1,186 @@
+#include "locale.h"
+
+/* English */
+static const Locale L_EN = {
+    .os_name = "bunOS",
+    .by_author = "by NameSugar",
+    .tip = "Arrows: navigate • Enter: select • ESC: halt",
+    .btn_battery = "Battery",
+    .btn_open_lid = "Open Lid",
+    .btn_sleep = "Sleep",
+    .btn_settings = "Settings",
+    .btn_apps = "Apps",
+    .btn_av = "Antivirus",
+    .battery_title = "Battery",
+    .device_title = "Device",
+    .device_name = "Headphone Case v1.0",
+    .sleeping = "Sleeping...",
+    .halting = "Halting...",
+    .settings_title = "Settings",
+    .settings_lang = "Language",
+    .settings_wall = "Wallpaper",
+    .lang_en = "English",
+    .lang_uk = "Ukrainian",
+    .lang_ko = "Korean",
+    .lang_ru = "Russian",
+    .lang_he = "Hebrew",
+    .wall_solid = "Solid",
+    .wall_gradient = "Gradient",
+    .wall_checker = "Checker",
+    .apps_title = "Applications",
+    .av_title = "Antivirus",
+    .av_scan = "Scanning...",
+    .av_clean = "No threats found",
+    .av_ok = "OK",
+    .av_threat = "Threat found!"
+};
+
+/* Ukrainian */
+static const Locale L_UK = {
+    .os_name = "bunOS",
+    .by_author = "від NameSugar",
+    .tip = "Стрілки: навігація • ENTER: вибрати • ESC: зупинка",
+    .btn_battery = "Батарея",
+    .btn_open_lid = "Відкрити кришку",
+    .btn_sleep = "Сон",
+    .btn_settings = "Налаштування",
+    .btn_apps = "Додатки",
+    .btn_av = "Анти-вірус",
+    .battery_title = "Батарея",
+    .device_title = "Пристрій",
+    .device_name = "Футляр для навушників v1.0",
+    .sleeping = "Сон...",
+    .halting = "Зупинка...",
+    .settings_title = "Налаштування",
+    .settings_lang = "Мова",
+    .settings_wall = "Шпалери",
+    .lang_en = "Англійська",
+    .lang_uk = "Українська",
+    .lang_ko = "Корейська",
+    .lang_ru = "Російська",
+    .lang_he = "Іврит",
+    .wall_solid = "Суцільні",
+    .wall_gradient = "Градієнт",
+    .wall_checker = "Шахівниця",
+    .apps_title = "Додатки",
+    .av_title = "Анти-вірус",
+    .av_scan = "Сканування...",
+    .av_clean = "Загроз не знайдено",
+    .av_ok = "Гаразд",
+    .av_threat = "Знайдено загрозу!"
+};
+
+/* Korean */
+static const Locale L_KO = {
+    .os_name = "bunOS",
+    .by_author = "by NameSugar",
+    .tip = "화살표: 이동 • Enter: 선택 • ESC: 정지",
+    .btn_battery = "배터리",
+    .btn_open_lid = "덮개 열기",
+    .btn_sleep = "절전",
+    .btn_settings = "설정",
+    .btn_apps = "앱",
+    .btn_av = "안티바이러스",
+    .battery_title = "배터리",
+    .device_title = "디바이스",
+    .device_name = "헤드폰 케이스 v1.0",
+    .sleeping = "절전...",
+    .halting = "정지...",
+    .settings_title = "설정",
+    .settings_lang = "언어",
+    .settings_wall = "배경",
+    .lang_en = "영어",
+    .lang_uk = "우크라이나어",
+    .lang_ko = "한국어",
+    .lang_ru = "러시아어",
+    .lang_he = "히브리어",
+    .wall_solid = "단색",
+    .wall_gradient = "그라데이션",
+    .wall_checker = "체커",
+    .apps_title = "애플리케이션",
+    .av_title = "안티바이러스",
+    .av_scan = "검사중...",
+    .av_clean = "위협 없음",
+    .av_ok = "완료",
+    .av_threat = "위협 발견!"
+};
+
+/* Russian */
+static const Locale L_RU = {
+    .os_name = "bunOS",
+    .by_author = "от NameSugar",
+    .tip = "Стрелки: навигация • ENTER: выбрать • ESC: остановить",
+    .btn_battery = "Батарея",
+    .btn_open_lid = "Открыть крышку",
+    .btn_sleep = "Сон",
+    .btn_settings = "Настройки",
+    .btn_apps = "Приложения",
+    .btn_av = "Антивирус",
+    .battery_title = "Батарея",
+    .device_title = "Устройство",
+    .device_name = "Футляр для наушников v1.0",
+    .sleeping = "Сон...",
+    .halting = "Остановка...",
+    .settings_title = "Настройки",
+    .settings_lang = "Язык",
+    .settings_wall = "Обои",
+    .lang_en = "Английский",
+    .lang_uk = "Украинский",
+    .lang_ko = "Корейский",
+    .lang_ru = "Русский",
+    .lang_he = "Иврит",
+    .wall_solid = "Однотонные",
+    .wall_gradient = "Градиент",
+    .wall_checker = "Клетка",
+    .apps_title = "Приложения",
+    .av_title = "Антивирус",
+    .av_scan = "Сканирование...",
+    .av_clean = "Угроза не найдена",
+    .av_ok = "ОК",
+    .av_threat = "Обнаружена угроза!"
+};
+
+/* Hebrew */
+static const Locale L_HE = {
+    .os_name = "bunOS",
+    .by_author = "by NameSugar",
+    .tip = "חצים: ניווט • Enter: בחר • ESC: עצור",
+    .btn_battery = "סוללה",
+    .btn_open_lid = "פתח מכסה",
+    .btn_sleep = "שינה",
+    .btn_settings = "הגדרות",
+    .btn_apps = "אפליקציות",
+    .btn_av = "אנטי-וירוס",
+    .battery_title = "סוללה",
+    .device_title = "מכשיר",
+    .device_name = "מארז אוזניות v1.0",
+    .sleeping = "נכנס לשינה...",
+    .halting = "עוצר...",
+    .settings_title = "הגדרות",
+    .settings_lang = "שפה",
+    .settings_wall = "טפט",
+    .lang_en = "אנגלית",
+    .lang_uk = "אוקראינית",
+    .lang_ko = "קוריאנית",
+    .lang_ru = "רוסית",
+    .lang_he = "עברית",
+    .wall_solid = "מוצק",
+    .wall_gradient = "מעבר צבע",
+    .wall_checker = "לוח שחמט",
+    .apps_title = "אפליקציות",
+    .av_title = "אנטי-וירוס",
+    .av_scan = "ביצוע סריקה...",
+    .av_clean = "לא נמצאו איומים",
+    .av_ok = "אישור",
+    .av_threat = "איום נמצא!"
+};
+
+const Locale* loc_get(Language lang){
+    switch(lang){
+        case LANG_UK: return &L_UK;
+        case LANG_KO: return &L_KO;
+        case LANG_RU: return &L_RU;
+        case LANG_HE: return &L_HE;
+        default: return &L_EN;
+    }
+}
