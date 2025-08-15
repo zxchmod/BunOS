@@ -24,6 +24,7 @@ In Settings, you can switch languages (English, Ukrainian, Korean, Russian, Hebr
 Press Save to store settings to disk (last sector of floppy image).
 
 bunOS is intended as a learning and demonstration project for compact device OS design.
+```
 
 ## OS Structure
 
